@@ -1,13 +1,11 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <RockPaper></RockPaper>
 </template>
+
+<script setup lang="ts">
+  import RockPaper from './components/games/games_01/rockPaper.vue'
+
+</script>
 
 <style>
 #app {
@@ -17,5 +15,10 @@ import HelloWorld from './components/HelloWorld.vue'
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
 }
 </style>
