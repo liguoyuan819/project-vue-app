@@ -1,9 +1,8 @@
 <template>
-  <RockPaper></RockPaper>
+    <router-view/>
 </template>
 
 <script setup lang="ts">
-  import RockPaper from './components/games/games_01/rockPaper.vue'
 
 </script>
 
@@ -14,11 +13,19 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
-body{
+.container{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: row;
+}
+.left-side{
+  width: 16%;
   background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+  height: 100vh;
+}
+.main-content{
+  width: 84%;
 }
 </style>
