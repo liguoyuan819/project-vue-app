@@ -5,6 +5,10 @@ import Layout from '../components/layout/index.vue'
 
 const routes: Array<RouteRecordRaw> = [
     {
+        path:"/",
+        redirect:"/rockPaper"
+    },
+    {
         path: "/dashboard",
         name:"Dashboard",
         component:Layout,
